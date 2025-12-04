@@ -1,1 +1,6 @@
+name: Python CICD
 
+on: 
+  push:
+    branches: [main]
+  pull_request:
