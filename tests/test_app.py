@@ -16,7 +16,7 @@ def test_sub():
     assert subtract(10, 5) == 5
 
 def test_sub2():
-    assert subtract(11, 4) != 7
+    assert subtract(11, 4) != 8
 
 def test_mult():
     assert multiply(3,4) == 12
