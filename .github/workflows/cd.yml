@@ -1,0 +1,16 @@
+name: Python CD
+
+on: 
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: deploy the artifacts
+        uses: actions/deploy-pages@v4

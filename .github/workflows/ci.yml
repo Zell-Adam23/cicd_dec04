@@ -1,4 +1,4 @@
-name: Python CICD
+name: Python CI
 
 on: 
   push:
@@ -41,19 +41,3 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./sites
-
-on: 
-  push:
-    branches: [main]
-  pull_request:
-
-jobs:
-  Deploy:
-    needs: run-tests
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    steps:
-      - name: deploy the artifacts
-        uses: actions/deploy-pages@v4
