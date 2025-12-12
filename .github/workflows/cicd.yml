@@ -2,7 +2,7 @@ name: Python CICD
 
 on: 
   push:
-    branches: [main]
+    branches: [development]
   pull_request:
 
 jobs:
@@ -42,6 +42,12 @@ jobs:
         with:
           path: ./sites
 
+on: 
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
   Deploy:
     needs: run-tests
     runs-on: ubuntu-latest
