@@ -13,7 +13,7 @@ def multiply (a, b):
 
 def division (a,b):
     if b ==0:
-        return ValueError("can't divide by zero")
+        raise ValueError("can't divide by zero")
     return a/b
 
 #advanced
