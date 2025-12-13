@@ -32,7 +32,7 @@ def test_div2():
     assert division(16, 4) != 7
 
 def test_log():
-    assert log(100) == 10
+    assert log(100) == 2.0
 
 def test_log2():
     assert log(8, 2) != 2
@@ -44,7 +44,7 @@ def test_cos():
     assert cos(math.pi) == -1.0
 
 def test_sin():
-    assert sin(math.pi) == 1.0
+    assert sin(0.0) == 0.0
 
 def test_sqroot():
     assert sqroot(16) == 4.0
