@@ -1,6 +1,6 @@
 import math
 
-#basic
+#basic tests
 
 def add (a,b):
     return a+b
@@ -16,7 +16,7 @@ def division (a,b):
         raise ValueError("can't divide by zero")
     return a/b
 
-#advanced
+#advanced tests
 
 def log(a, base=10):
     if a <= 0:
