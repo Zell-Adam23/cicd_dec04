@@ -32,7 +32,7 @@ def sin(a):
 def cos(a):
     return math.cos(a)
 
-def root(a):
+def sqroot(a):
     if a<0:
         raise ValueError("squart root of negative is imaginary")
     return math.sqrt(a)
