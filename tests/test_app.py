@@ -29,11 +29,11 @@ def test_log():
 
 def test_log2():
     with pytest.raises(ValueError):
-        log(10, -3)
+        log(-5)
 
 def test_log3():
     with pytest.raises(ValueError):
-        log(7, 0)
+        log(0, 1)
 
 def test_square():
     assert square(9) == 81
