@@ -1,3 +1,7 @@
+import math
+
+#basic
+
 def add (a,b):
     return a+b
 
@@ -8,4 +12,34 @@ def multiply (a, b):
     return a*b
 
 def division (a,b):
+    if b ==0:
+        return ValueError("can't divide by zero")
     return a/b
+
+#advanced
+
+def log(a, base=10):
+    if a <= 0:
+        raise ValueError("log undefined for zero or negatives")
+    return math.log(a, base)
+    
+def square(a):
+    return a*a
+
+def sin(a):
+    return math.sin(a)
+
+def cos(a):
+    return math.cos(a)
+
+def root(a):
+    if a<0:
+        raise ValueError("squart root of negative is imaginary")
+    return math.sqrt(a)
+
+#a=part, b=whole
+def percent(a, b):
+    if b == 0:
+        raise ValueError("0 cant be split")
+    return (a/b)*100
+    
